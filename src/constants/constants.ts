@@ -15,12 +15,18 @@ import featureTwelveIcon from "../assets/feature-twelve.svg";
 
 import { Home, Star, Messages1, Receipt1 } from "iconsax-react";
 
-export const navLinks = [
+type NavLink = {
+  id: string;
+  title: string;
+  icon?: React.ElementType ;
+};
+
+export const navLinks: NavLink[] = [
   { id: "#home", title: "Home", icon: Home },
   { id: "#features", title: "Features", icon: Star },
   { id: "#pricing", title: "Pricing", icon: Receipt1 },
-  { id: "#contact", title: " Contact us", con: Messages1 },
-  { id: "#about", title: "About us", con: Messages1 },
+  { id: "#contact", title: " Contact us", icon: Messages1 },
+  { id: "#about", title: "About us", icon: Messages1 },
 ];
 
 export const featureGroupOne = [

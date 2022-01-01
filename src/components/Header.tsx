@@ -3,6 +3,7 @@ import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { HambergerMenu } from "iconsax-react";
+import { ReactNode } from "react";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -45,6 +46,7 @@ const Header = () => {
 
 export default Header;
 
+import { Icon } from "iconsax-react";
 interface Props {
   onOpen: (arg: boolean) => void;
   open: boolean;
@@ -104,19 +106,18 @@ const MobileSideBar = ({ onOpen, open }: Props) => {
                           {navLinks.map((navLink, index) => (
                             <li
                               key={navLink.id}
-                              className={`text-[11px] font-medium   ${
+                              className={`text-[11px] font-medium ${
                                 index === navLinks.length - 1 ? "mr-0" : "mr-10"
                               }`}
                             >
-                              <a href={`${navLink.id}`}>
-                                {/* {
+                              <a href={navLink.id}>
+                                {navLink.icon && (
                                   <navLink.icon
                                     size={20}
                                     variant="Bold"
-                                    className="inlingie-block mr-4 text-[14px]"
+                                    className="inline-block mr-4 text-[14px]"
                                   />
-                                } */}
-
+                                )}
                                 {navLink.title}
                               </a>
                             </li>

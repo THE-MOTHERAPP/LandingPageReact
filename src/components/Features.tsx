@@ -8,7 +8,7 @@ import {
 } from "../constants/constants";
 const Features = () => {
   return (
-    <div className=" ">
+    <section id="features" className=" ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-20 ">
         <div className="flex sm:justify-between flex-col sm:flex-row items-center justify-center  ">
           <div className="space-y-4 text-center sm:text-left">
@@ -124,7 +124,7 @@ const Features = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

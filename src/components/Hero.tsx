@@ -3,7 +3,10 @@ import { Video } from "iconsax-react";
 const Hero = () => {
   return (
     <>
-      <div className="md:bg-hero  bg-hero_mobile bg-no-repeat sm:h-screen h-[45vh] sm:w-screen ">
+      <section
+        id="home"
+        className="md:bg-hero  bg-hero_mobile bg-no-repeat sm:h-screen h-[45vh] sm:w-screen "
+      >
         <div className=" h-full  mx-auto max-w-7xl px-6 lg:px-8 pt-20   hidden sm:block ">
           <div className=" space-y-5">
             <h1 className=" text-4xl lg:text-[2.6rem]  lg:leading-[2.9rem]  leading-10  text-left text-gray-900 max-w-3xl">
@@ -31,7 +34,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div className=" h-full   mx-auto max-w-7xl px-6 lg:px-8  sm:hidden  ">
         <div className=" space-y-5">
           <h1 className=" text-4xl lg:text-[2.6rem]   lg:leading-[2.9rem]  leading-10  text-center text-gray-900 max-w-3xl sm:text-left ">

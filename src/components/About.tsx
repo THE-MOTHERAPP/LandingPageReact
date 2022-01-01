@@ -2,7 +2,10 @@ import aboutUs from "../assets/about-us.png";
 
 const About = () => {
   return (
-    <div className="text-[#62677F]  flex flex-col items-center sm:flex-row justify-between mx-auto max-w-7xl px-6 lg:px-8 py-20 ">
+    <section
+      id="about"
+      className="text-[#62677F]  flex flex-col items-center sm:flex-row justify-between mx-auto max-w-7xl px-6 lg:px-8 py-20 "
+    >
       <h1 className="text-4xl font-bold tracking-tight text-stone-900 sm:hidden">
         ABOUT US
       </h1>
@@ -37,7 +40,7 @@ const About = () => {
           of wellness in Ghana with DietMate.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
