@@ -13,7 +13,7 @@ import featureTenIcon from "../assets/feature-ten.svg";
 import featureEleventIcon from "../assets/feature-eleven.svg";
 import featureTwelveIcon from "../assets/feature-twelve.svg";
 
-import { Home, Star, Messages1, Receipt1, ShieldTick } from "iconsax-react";
+import { Home, Star, Messages1, Receipt1 } from "iconsax-react";
 
 export const navLinks = [
   { id: "#home", title: "Home", icon: Home },
