@@ -1,4 +1,3 @@
-import React from "react";
 import veges from "../assets/veges.svg";
 import watch from "../assets/watch.svg";
 import mealPlan from "../assets/meal-plan.png";
