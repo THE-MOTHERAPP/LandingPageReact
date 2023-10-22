@@ -3,7 +3,6 @@ import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { HambergerMenu } from "iconsax-react";
-import { ReactNode } from "react";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -46,7 +45,6 @@ const Header = () => {
 
 export default Header;
 
-import { Icon } from "iconsax-react";
 interface Props {
   onOpen: (arg: boolean) => void;
   open: boolean;
