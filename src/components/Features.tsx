@@ -55,7 +55,7 @@ const Features = () => {
             className=" w-96 object-cover rounded-2xl aspect-[3/2] mt-4"
             alt="veges-image"
           />
-          <div className="space-y-4 text-center sm:text-left  ">
+          <div className="space-y-4 text-center  sm:pl-4  ">
             <span className=" text-[#1170FF] bg-[#EEF4FD]  rounded-md border px-2.5 py-1.5">
               CONVENIENCE
             </span>
@@ -80,7 +80,7 @@ const Features = () => {
               <div className="w-10 h-10 p-2 rounded-lg bg-[#EEF4FD] flex items-center justify-center">
                 <img className="w-5" src={feature.Imgsrc} />
               </div>
-              <p className=" text-xs block max-w-[150px] font-bold">
+              <p className=" text-xs block sm:max-w-[150px] w-full font-bold">
                 {feature.content}
               </p>
             </div>
@@ -111,7 +111,7 @@ const Features = () => {
             alt="veges-image"
           />
         </div>
-        <div className="flex-col sm:flex-row space-y-2 sm:space-y-0 justify-between w-full mt-7">
+        <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 justify-between w-full mt-7">
           {featureGroupThree.map((feature, index) => (
             <div key={index} className=" flex  items-center space-x-1">
               <div className="w-10 h-10 p-2 rounded-lg bg-[#EEF4FD] flex items-center justify-center">
