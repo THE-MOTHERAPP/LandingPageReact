@@ -13,11 +13,14 @@ import featureTenIcon from "../assets/feature-ten.svg";
 import featureEleventIcon from "../assets/feature-eleven.svg";
 import featureTwelveIcon from "../assets/feature-twelve.svg";
 
+import { Home, Star, Messages1, Receipt1, ShieldTick } from "iconsax-react";
+
 export const navLinks = [
-  { id: "#about", title: "About us" },
-  { id: "#features", title: "Features" },
-  { id: "#pricing", title: "Pricing" },
-  { id: "#contact", title: " Contact us" },
+  { id: "#home", title: "Home", icon: Home },
+  { id: "#features", title: "Features", icon: Star },
+  { id: "#pricing", title: "Pricing", icon: Receipt1 },
+  { id: "#contact", title: " Contact us", con: Messages1 },
+  { id: "#about", title: "About us", con: Messages1 },
 ];
 
 export const featureGroupOne = [
@@ -74,5 +77,54 @@ export const featureGroupThree = [
   {
     content: "Consistent Progress, Continuous Improvement",
     Imgsrc: featureTwelveIcon,
+  },
+];
+
+export const footerNavigation = {
+  features: [
+    { name: "Personalization", href: "#" },
+    { name: "Convenience", href: "#" },
+    { name: "Progress tracking", href: "#" },
+  ],
+  pricing: [
+    { name: "Free plan", href: "#" },
+    { name: "Premium plan", href: "#" },
+  ],
+  socialMedia: [
+    { name: "Instagram", href: "#" },
+    { name: "Twitter", href: "#" },
+    { name: "LinkedIn", href: "#" },
+  ],
+  contact: [{ name: "psam64850@gmail.com", href: "#" }],
+};
+
+export const tiers = [
+  {
+    name: "Free Plan",
+    id: "free-tier",
+    href: "#",
+    priceMonthly: "Free",
+
+    features: [
+      "Discover diverse recipes for your dietary needs",
+      "Create shopping lists for your meals",
+      "Basic progress tracking",
+    ],
+    featured: true,
+  },
+  {
+    name: "Premium Plan",
+    id: "premium-tier",
+    href: "#",
+    priceMonthly: "GH₵35",
+
+    features: [
+      "Personalized meal plans tailored to you",
+      "Advanced progress tracking",
+      "Easily find local ingredient sources",
+      "Set and achieve your health goals effectively",
+      "Gain detailed nutrition insights for informed choices",
+    ],
+    featured: false,
   },
 ];

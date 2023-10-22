@@ -1,35 +1,5 @@
 import { CheckIcon } from "@heroicons/react/20/solid";
-
-const tiers = [
-  {
-    name: "Free Plan",
-    id: "tier-personal",
-    href: "#",
-    priceMonthly: "Free",
-
-    features: [
-      "Discover diverse recipes for your dietary needs",
-      "Create shopping lists for your meals",
-      "Basic progress tracking",
-    ],
-    featured: true,
-  },
-  {
-    name: "Premium Plan",
-    id: "tier-team",
-    href: "#",
-    priceMonthly: "GH₵35",
-
-    features: [
-      "Personalized meal plans tailored to you",
-      "Advanced progress tracking",
-      "Easily find local ingredient sources",
-      "Set and achieve your health goals effectively",
-      "Gain detailed nutrition insights for informed choices",
-    ],
-    featured: false,
-  },
-];
+import { tiers } from "../constants/constants";
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");

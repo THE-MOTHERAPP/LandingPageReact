@@ -1,24 +1,11 @@
-const navigation = {
-  features: [
-    { name: "Personalization", href: "#" },
-    { name: "Convenience", href: "#" },
-    { name: "Progress tracking", href: "#" },
-  ],
-  pricing: [
-    { name: "Free plan", href: "#" },
-    { name: "Premium plan", href: "#" },
-  ],
-  socialMedia: [
-    { name: "Instagram", href: "#" },
-    { name: "Twitter", href: "#" },
-    { name: "LinkedIn", href: "#" },
-  ],
-  contact: [{ name: "psam64850@gmail.com", href: "#" }],
-};
+import { footerNavigation } from "../constants/constants";
 
 export default function Foooter() {
   return (
-    <footer className="bg-white" aria-labelledby="footer-heading">
+    <footer
+      className="bg-gray-900 text-white"
+      aria-labelledby="footer-heading "
+    >
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -28,15 +15,15 @@ export default function Foooter() {
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">
+                <h3 className="text-sm font-semibold leading-6 text-white">
                   Features
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.features.map((item) => (
+                  {footerNavigation.features.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-gray-600 hover:text-gray-200"
                       >
                         {item.name}
                       </a>
@@ -45,15 +32,15 @@ export default function Foooter() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">
+                <h3 className="text-sm font-semibold leading-6 text-white">
                   Pricing
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.pricing.map((item) => (
+                  {footerNavigation.pricing.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-gray-600 hover:text-gray-100"
                       >
                         {item.name}
                       </a>
@@ -64,15 +51,15 @@ export default function Foooter() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">
+                <h3 className="text-sm font-semibold leading-6 text-white">
                   Social media
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.socialMedia.map((item) => (
+                  {footerNavigation.socialMedia.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-gray-600 hover:text-gray-100"
                       >
                         {item.name}
                       </a>
@@ -81,15 +68,15 @@ export default function Foooter() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">
+                <h3 className="text-sm font-semibold leading-6 text-white">
                   Contact us
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  {navigation.contact.map((item) => (
+                  {footerNavigation.contact.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm leading-6 text-gray-600 hover:text-gray-100"
                       >
                         {item.name}
                       </a>
