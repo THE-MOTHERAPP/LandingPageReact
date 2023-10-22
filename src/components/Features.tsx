@@ -11,7 +11,7 @@ const Features = () => {
     <div className=" ">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-20 ">
         <div className="flex sm:justify-between flex-col sm:flex-row items-center justify-center  ">
-          <div className="space-y-4">
+          <div className="space-y-4 text-center sm:text-left">
             <span className=" text-[#1170FF] bg-[#EEF4FD]  rounded-md border px-2.5 py-1.5">
               PERSONALIZATION
             </span>
@@ -35,7 +35,7 @@ const Features = () => {
             alt="meal-image"
           />
         </div>
-        <div className="flex   flex-col sm:flex-row space-y-2 sm:space-y-0 justify-between w-full mt-7">
+        <div className="flex   flex-col sm:flex-row space-y-2 sm:space-y-0 justify-between w-full mt-7 ">
           {featureGroupOne.map((feature, index) => (
             <div key={index} className=" flex  items-center space-x-1">
               <div className="w-10 h-10 p-2 rounded-lg bg-[#EEF4FD] flex items-center justify-center">
@@ -49,17 +49,17 @@ const Features = () => {
         </div>
       </div>
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-20 border-t border-b ">
-        <div className="flex flex-col-reverse sm:flex-row justify-between">
+        <div className="flex flex-col-reverse sm:flex-row sm:justify-between items-center justify-center">
           <img
             src={veges}
-            className=" w-96 object-cover rounded-2xl aspect-[3/2]"
+            className=" w-96 object-cover rounded-2xl aspect-[3/2] mt-4"
             alt="veges-image"
           />
-          <div className="space-y-4  ">
+          <div className="space-y-4 text-center sm:text-left  ">
             <span className=" text-[#1170FF] bg-[#EEF4FD]  rounded-md border px-2.5 py-1.5">
               CONVENIENCE
             </span>
-            <h2 className="text-2xl">
+            <h2 className="text-2xl ">
               Navigate the world of wellness with ease.
             </h2>
             <p className="max-w-2xl text-[#62677F]">
@@ -74,7 +74,7 @@ const Features = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-between w-full mt-7">
+        <div className=" flex   flex-col sm:flex-row space-y-2 sm:space-y-0 justify-between w-full mt-7">
           {featureGroupTwo.map((feature, index) => (
             <div key={index} className=" flex  items-center space-x-1">
               <div className="w-10 h-10 p-2 rounded-lg bg-[#EEF4FD] flex items-center justify-center">
@@ -88,9 +88,9 @@ const Features = () => {
         </div>
       </div>
       <div className=" space-y-6  mx-auto max-w-7xl px-6 lg:px-8  py-20  border-b ">
-        <div className="flex justify-between">
-          <div className="space-y-4">
-            <span className=" text-[#1170FF] bg-[#EEF4FD]  rounded-md border px-2.5 py-1.5">
+        <div className=" flex flex-col sm:flex-row sm:justify-between items-center justify-center">
+          <div className="space-y-4 text-center sm:text-left">
+            <span className=" text-[#1170FF] bg-[#EEF4FD]  rounded-md border px-2.5 py-1.5  ">
               PROGRESS TRACKING
             </span>
             <h2 className="text-2xl">Set goals and watch yourself thrive.</h2>
@@ -107,17 +107,17 @@ const Features = () => {
           </div>
           <img
             src={watch}
-            className=" w-96 object-cover rounded-2xl aspect-[3/2]"
+            className=" w-96 object-cover rounded-2xl aspect-[3/2] sm:mt-0 mt-4"
             alt="veges-image"
           />
         </div>
-        <div className="flex justify-between w-full">
+        <div className="flex-col sm:flex-row space-y-2 sm:space-y-0 justify-between w-full mt-7">
           {featureGroupThree.map((feature, index) => (
             <div key={index} className=" flex  items-center space-x-1">
               <div className="w-10 h-10 p-2 rounded-lg bg-[#EEF4FD] flex items-center justify-center">
                 <img className="w-5" src={feature.Imgsrc} />
               </div>
-              <p className=" text-xs block max-w-[150px] font-bold">
+              <p className=" text-xs block sm:max-w-[150px] w-full font-bold">
                 {feature.content}
               </p>
             </div>
