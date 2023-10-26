@@ -30,7 +30,11 @@ const Features = () => {
               goals.
             </p>
           </div>
-          <img src={mealPlan} className=" " alt="meal-image" />
+          <img
+            src={mealPlan}
+            className="w-96  mt-4"
+            alt="meal-image"
+          />
         </div>
         <div className="flex   flex-col sm:flex-row space-y-2 sm:space-y-0 items-center  justify-between w-full ">
           {featureGroupOne.map((feature, index) => (
@@ -47,11 +51,7 @@ const Features = () => {
       </div>
       <div className="veggie mx-auto max-w-7xl px-6 lg:px-8 py-20 border-t border-b ">
         <div className=" flex flex-col-reverse md:flex-row sm:justify-between items-center justify-center mb-10">
-          <img
-            src={veges}
-            className="veges"
-            alt="veges-image"
-          />
+          <img src={veges} className="veges" alt="veges-image" />
 
           <div className="space-y-5 text-center md:text-left  lg:text-xl ">
             <span className=" text-[#1170FF] bg-[#EEF4FD]  rounded-md border px-2.5 py-1.5">
