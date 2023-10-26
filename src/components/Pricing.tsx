@@ -1,9 +1,7 @@
 import { CheckIcon } from "@heroicons/react/20/solid";
 import { tiers } from "../constants/constants";
 
-function classNames(...classes: any) {
-  return classes.filter(Boolean).join(" ");
-}
+
 
 export default function Pricing() {
   return (
@@ -20,7 +18,7 @@ export default function Pricing() {
         </p>
       </div>
       <div className="container">
-        {tiers.map((tier, tierIdx) => (
+        {tiers.map((tier) => (
           <div
             key={tier.id}
             className="pricing bg-white p-5 rounded-lg"
