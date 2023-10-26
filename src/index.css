@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+html {
   scroll-behavior: smooth;
 }
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+#home{
+  min-height: 100vh;
+  background:  url('./assets/bbb.png') center/cover no-repeat
+}
+
+@media screen and (max-width: 930px) {
+ #home{
+  min-height: 100vh;
+  background:  linear-gradient(rgb(215, 207, 207), rgba(139, 69, 19, 0)),
+ url('./assets/kjnkj.png') right bottom/cover no-repeat
+}
+
+}
+
+/* @media screen  and (max-width:550px) {
+  
+  .swoosh{
+    width: 100%;
+  position: absolute;
+    top: 0;
+    height: calc(70% + 1px);
+    
+    background-position: bottom;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+     background-image:  url(./assets/hero-7153a29f1efdd14cc5b5992925b4775ad13074514c265809afc8547c414efe5a.svg);
+  }
+} */
