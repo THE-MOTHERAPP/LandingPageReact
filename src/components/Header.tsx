@@ -11,8 +11,8 @@ const Header = () => {
       <MobileSideBar onOpen={setOpen} open={open} />
       <div className="mx-auto max-w-7xl px-4 lg:px-8 flex items-center justify-between py-5">
         <h1 className=" tracking-widest font-semibold">
-          <span className="hidden sm:block">Mydietneeds</span>{" "}
-          <span className="sm:hidden">DIETMATE</span>
+          <span className="">MYDIETNEEDS</span>{" "}
+          
         </h1>
         <ul className="list-none hidden sm:flex">
           {navLinks.map((navLink) => (
