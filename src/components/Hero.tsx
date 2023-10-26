@@ -4,7 +4,7 @@ import Header from "./Header";
 const Hero = () => {
   return (
     <>
-      <section id="home" className="">
+      <section id="home" className="mb-5">
         <Header />
         <div className=" h-full  mx-auto  max-w-7xl px-6 lg:px-8 pt-20  md:translate-y-12  hidden sm:block ">
           <div className=" space-y-7 md:translate-y-10 md:translate-x-4">

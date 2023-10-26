@@ -14,20 +14,67 @@ html {
   max-width: 100%;
 }
 
-#home{
+#home {
   min-height: 100vh;
-  background:  url('./assets/bbb.png') center/cover no-repeat
+  background: url("./assets/bbb.png") center/cover no-repeat;
 }
 
 @media screen and (max-width: 930px) {
- #home{
-  min-height: 100vh;
-  background:  linear-gradient(rgb(215, 207, 207), rgba(139, 69, 19, 0)),
- url('./assets/kjnkj.png') right bottom/cover no-repeat
+  #home {
+    min-height: 100vh;
+    background: linear-gradient(rgb(215, 207, 207), rgba(139, 69, 19, 0)),
+      url("./assets/kjnkj.png") right bottom/cover no-repeat;
+  }
 }
 
+@media screen and (max-width: 970px) {
+  .veges {
+    width: 70%;
+  }
 }
 
+@media screen and (max-width: 900px) {
+  .veges {
+    width: auto;
+  }
+}
+
+.veggie {
+  background: linear-gradient(45deg , white 5%, rgb(241, 246, 243) );
+}
+
+.progress {
+  background: linear-gradient(135deg ,rgb(250, 251, 251) 5% ,white );
+}
+
+#pricing{
+   background: linear-gradient(rgb(241, 246, 243) , white  );
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the tiers horizontally */
+}
+
+.pricing {
+  flex: 1; /* Each tier takes equal horizontal space */
+  max-width: 300px; /* Adjust the width as needed */
+  margin: 15px; /* Add spacing between tiers */
+  min-height: 200px
+}
+
+.pricing:nth-child(2){
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+
+}
 /* @media screen  and (max-width:550px) {
   
   .swoosh{
