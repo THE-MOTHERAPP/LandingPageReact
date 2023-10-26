@@ -13,7 +13,7 @@ const Features = () => {
       <div className="  mx-auto max-w-6xl px-6 lg:px-8 py-10 ">
         <div className="flex sm:justify-between flex-col md:flex-row items-center justify-center mb-10 ">
           <div className="space-y-5 text-center md:text-left  lg:text-2xl">
-            <span className=" text-[#1170FF] bg-[#EEF4FD]  rounded-md border py-1.5">
+            <span className=" text-[#1170FF] bg-[#EEF4FD]  rounded-md border px-2.5 py-1.5">
               PERSONALIZATION
             </span>
             <h2 className="text-2xl lg:max-w-sm">
@@ -94,7 +94,7 @@ const Features = () => {
             <h2 className="text-2xl lg:max-w-sm">
               Set goals and watch yourself thrive.
             </h2>
-            <p className="max-w-xl text-[#62677F]">
+            <p className="max-w-2xl text-[#62677F]">
               Stay motivated by visualizing your progress and celebrating
               milestones as you stick to your meal plans.Make informed decisions
               by monitoring your journey and enjoy continuous improvement as we
@@ -105,7 +105,7 @@ const Features = () => {
               journey.
             </p>
           </div>
-          <img src={watch} className="" alt="veges-image" />
+          <img src={watch} className="progressimg" alt="progress-image" />
         </div>
         <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0  justify-between w-full ">
           {featureGroupThree.map((feature, index) => (

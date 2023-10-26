@@ -27,17 +27,29 @@ html {
   }
 }
 
-@media screen and (max-width: 970px) {
-  .veges {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 970px) {
   .veges {
     width: auto;
   }
 }
+
+@media screen and (max-width: 970px) {
+  .veges {
+    width: 50%;
+  }
+}
+
+ @media screen and (min-width: 970px) {
+  .progressimg {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .progressimg {
+    width: 50%;
+  }
+} 
 
 .veggie {
   background: linear-gradient(45deg , white 5%, rgb(241, 246, 243) );
