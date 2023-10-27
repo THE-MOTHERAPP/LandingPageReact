@@ -1,4 +1,4 @@
-import { Video } from "iconsax-react";
+
 import { BsFillPlayFill } from "react-icons/bs";
 import Header from "./Header";
 
