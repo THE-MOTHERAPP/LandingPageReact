@@ -48,6 +48,8 @@ html {
   }
 }
 
+
+
 /* @media screen and (max-width: 899px) {
   .progressimg {
     width: auto;
@@ -90,6 +92,32 @@ html {
   0 100px 80px rgba(0, 0, 0, 0.12)
 ;
 
+}
+
+
+.container-content {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between ;
+ ;
+  /* Center the tiers horizontally */
+  
+}
+
+.content {
+  flex: 0 0 calc(50% - 10px); /* Two benefits per row with spacing */
+  margin: 5px;
+   
+}
+
+@media screen and (max-width: 768px) {
+
+  .content{
+    align-items: center; /* Center items vertically on smaller screens */
+  }
+  .content {
+    flex: 0 0 calc(100% - 10px); /* One benefit per row on smaller screens */
+  }
 }
 /* @media screen  and (max-width:550px) {
   
