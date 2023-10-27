@@ -1,4 +1,5 @@
 import { Video } from "iconsax-react";
+import { BsFillPlayFill } from "react-icons/bs";
 import Header from "./Header";
 
 const Hero = () => {
@@ -19,9 +20,9 @@ const Hero = () => {
             <div className="space-x-5 flex">
               <button
                 type="button"
-                className="rounded-md text-stone-900 border px-2.5 py-1.5 md:pl-3 md:pr-3 md:py-2 md:px-2 md:text-lg text-sm    hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 flex  space-x-1"
+                className="rounded-md text-stone-900 border border-black px-2.5 py-1.5 md:pl-3 md:pr-3 md:py-2 md:px-2 md:text-lg text-sm    hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 flex  space-x-1"
               >
-                <Video size="15" color="black" variant="Bold" />
+                <BsFillPlayFill size="20" color="black" variant="Bold" />
                 <span>Watch video</span>
               </button>
               <button
@@ -47,9 +48,9 @@ const Hero = () => {
             <div className="space-x-2 flex w-full justify-evenly">
               <button
                 type="button"
-                className="rounded-md text-stone-900 border px-2.5 py-1.5 text-sm hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 flex  space-x-1"
+                className="rounded-md text-stone-900 border border-black px-2.5 py-1.5 text-sm hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 flex  space-x-1"
               >
-                <Video size="15" color="black" variant="Bold" />
+                <BsFillPlayFill size="20" color="black" variant="Bold" />
                 <span>Watch video</span>
               </button>
               <button
