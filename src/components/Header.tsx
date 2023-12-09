@@ -3,6 +3,7 @@ import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { HambergerMenu } from "iconsax-react";
+import logo from '../assets/mydietneeds_wordmark_black.png'
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -10,10 +11,9 @@ const Header = () => {
     <>
       <MobileSideBar onOpen={setOpen} open={open} />
       <div className="mx-auto max-w-7xl px-4 lg:px-8 flex items-center justify-between py-5">
-        <h1 className=" tracking-widest font-semibold">
-          <span className="">MYDIETNEEDS</span>{" "}
-          
-        </h1>
+         <div className="logo-container">
+            <img src={logo} alt="Your Logo" />
+        </div>
         <ul className="list-none hidden sm:flex">
           {navLinks.map((navLink) => (
             <li

@@ -17,7 +17,7 @@ export default function Pricing() {
           Pricing
         </p>
       </div>
-      <div className="container">
+      <div className="container  max-w-9xl">
         {tiers.map((tier) => (
           <div
             key={tier.id}
