@@ -152,7 +152,7 @@ export default function Foooter() {
           <div className="my-section">
             <h2 className="my-subheader mb-4">Contact us</h2>
 
-            <form className="my-form" action="#" method="post">
+            <form className="my-form">
               <input type="email"  placeholder="email" id="email" name="email" />
 
               <textarea id="message" placeholder="message" name="message" rows={4}></textarea>
@@ -162,7 +162,7 @@ export default function Foooter() {
         </div>
       </div>
       <div className="my-copyright">
-        &copy; 2023 Your Company. All rights reserved.
+        &copy; 2023 MYDIETNEEDS. All rights reserved.
       </div>
     </footer>
   );

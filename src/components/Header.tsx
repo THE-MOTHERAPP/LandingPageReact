@@ -11,8 +11,10 @@ const Header = () => {
     <>
       <MobileSideBar onOpen={setOpen} open={open} />
       <div className="mx-auto max-w-7xl px-4 lg:px-8 flex items-center justify-between py-5">
-         <div className="logo-container">
+        <div className="logo-container">
+          <a  href="/">
             <img src={logo} alt="Your Logo" />
+          </a>
         </div>
         <ul className="list-none hidden sm:flex">
           {navLinks.map((navLink) => (
@@ -83,7 +85,7 @@ const MobileSideBar = ({ onOpen, open }: Props) => {
                     <div className="px-4 sm:px-6">
                       <div className="flex items-start justify-between">
                         <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
-                          DIETMATE
+                       
                         </Dialog.Title>
                         <div className="ml-3 flex h-7 items-center">
                           <button
