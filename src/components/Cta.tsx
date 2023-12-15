@@ -50,25 +50,32 @@ export default  function Cta(){
             </form>
 
             <form className="p-5 max-w-sm m-2 ml-5 ">
-              <label>What are you aiming to achieve with mydietneeds</label>
-              <select className="block"></select>
+              <label className="mb-3 block">What are you aiming to achieve with mydietneeds</label>
+              <select className="block mb-2 w-full p-2 rounded-md" id="cdkd" placeholder="Select all that apply" name="Selectapply">
 
-              <label className="max-w-sm text-center">
+            <option  value="never" >Never</option>
+        <option value="occasionally">Occasionally</option>
+        <option value="regularly">Regularly</option>
+        <option value="always">Always</option>
+              </select>
+           
+
+
+              <label className="max-w-sm block text-center mb-2">
                 Would you be interested in participating in app testing and
                 providing feedback on designs.
               </label>
-
-              <input
-                className=" block p-2 focus:outline-none border-2  mb-2 border-black rounded-md"
-                type="radio"
-                placeholder="email"
-                id="email"
-                name="email"
-              />
+               <label className="block mb-2">
+            <input type="radio" name="testing" value="yes"/> Yes , I am interested in participating.
+        </label>
+        <label className="block mb-2">
+            <input type="radio" name="testing" value="yes"/> No , I prefer to wait for the official release
+        </label>
+            
 
               <button
                 type="submit"
-                className=" block bg-[#1170FF] w-full  p-2 rounded-md"
+                className=" block bg-[#1170FF] w-full mb-2 p-2 rounded-md"
               >
                 Submit
               </button>
