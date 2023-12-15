@@ -24,8 +24,8 @@ export default  function Cta(){
               make a lasting change to your health , starting now.
             </p>
           </div>
-          <div className="max-w-9xl flex items-center justify-center translate-y-5 ">
-            <form className="w-xl">
+          <div className="max-w-9xl flex flex-col items-center justify-center translate-y-5 ">
+            <form className="p-5">
               <input
                 className=" block p-2 focus:outline-none border-2  mb-2 border-black rounded-md"
                 type="text"
@@ -46,6 +46,31 @@ export default  function Cta(){
                 className=" block bg-[#1170FF] w-full  p-2 rounded-md"
               >
                 JOIN
+              </button>
+            </form>
+
+            <form className="p-5 max-w-sm m-2 ml-5 ">
+              <label>What are you aiming to achieve with mydietneeds</label>
+              <select className="block"></select>
+
+              <label className="max-w-sm text-center">
+                Would you be interested in participating in app testing and
+                providing feedback on designs.
+              </label>
+
+              <input
+                className=" block p-2 focus:outline-none border-2  mb-2 border-black rounded-md"
+                type="radio"
+                placeholder="email"
+                id="email"
+                name="email"
+              />
+
+              <button
+                type="submit"
+                className=" block bg-[#1170FF] w-full  p-2 rounded-md"
+              >
+                Submit
               </button>
             </form>
           </div>
