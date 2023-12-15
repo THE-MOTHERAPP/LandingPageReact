@@ -152,11 +152,11 @@ export default function Foooter() {
           <div className="my-section">
             <h2 className="my-subheader mb-4">Contact us</h2>
 
-            <form className="my-form">
+            <form className="my-form" id="contact">
               <input type="email"  placeholder="email" id="email" name="email" />
 
               <textarea id="message" placeholder="message" name="message" rows={4}></textarea>
-              <button type="submit">Submit</button>
+              <button type="submit" >Submit</button>
             </form>
           </div>
         </div>

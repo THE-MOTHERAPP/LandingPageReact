@@ -22,7 +22,7 @@ html {
 @media screen and (max-width: 930px) {
   #home {
     min-height: 100vh;
-    background: linear-gradient(rgb(215, 207, 207), rgba(139, 69, 19, 0)),
+    background: linear-gradient(#dddbdb, rgba(139, 69, 19, 0)),
       url("./assets/kjnkj.png") right bottom/cover no-repeat;
   }
 }
@@ -38,12 +38,21 @@ html {
     /* Center the logo */
 }
 
+
+
+
 .logo-container img {
     width: 100%;
     height: auto;
     display: block;
 }
-
+@media screen and (max-width: 800px) {
+  .logo-container img {
+    width: 70%;
+    height: auto;
+    display: block;
+}
+}
 
 /* @media screen and (max-width: 899px) {
   .veges {

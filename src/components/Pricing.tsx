@@ -32,7 +32,7 @@ export default function Pricing() {
 
             <ul
               role="list"
-              className="mt-8 space-y-3 text-sm leading-6 text-gray-600 sm:mt-10"
+              className="mt-8 space-y-3 text-base leading-6 text-gray-600 sm:mt-10"
             >
               {tier.features.map((feature) => (
                 <li key={feature} className="flex gap-x-3">

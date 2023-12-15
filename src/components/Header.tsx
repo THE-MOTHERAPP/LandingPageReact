@@ -12,7 +12,7 @@ const Header = () => {
       <MobileSideBar onOpen={setOpen} open={open} />
       <div className="mx-auto max-w-7xl px-4 lg:px-8 flex items-center justify-between py-5">
         <div className="logo-container">
-          <a  href="/">
+          <a href="/">
             <img src={logo} alt="Your Logo" />
           </a>
         </div>
@@ -20,7 +20,7 @@ const Header = () => {
           {navLinks.map((navLink) => (
             <li
               key={navLink.id}
-              className={` hover:text-[#FD905A] text-base   text-gray-600  cursor-pointer  mr-10
+              className={` hover:text-[#FD905A] sm:text-sm text-base font-semibold   text-gray-600  cursor-pointer  mr-10
                 }`}
             >
               <a className="active" href={`${navLink.id}`}>
@@ -36,9 +36,11 @@ const Header = () => {
 
         <button
           type="button"
-          className=" hidden sm:block rounded-md text-stone-900 border px-2.5 py-1.5 text-sm  hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
+          className=" hidden sm:block rounded-md text-stone-900 font-semibold border px-2.5 py-1.5 text-sm  hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
         >
-          Join waitlist
+          <a  href="#cta" >
+           Join  Waitlist
+          </a>
         </button>
       </div>
     </>

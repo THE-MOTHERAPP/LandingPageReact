@@ -37,7 +37,7 @@ const About = () => {
           Ghana. Join us on this journey, be among the pioneers, and experience
           personalized nutrition and wellness that's authentically Ghanaian.
           Sign up for our waitlist now and become a part of shaping the future
-          of wellness in Ghana with DietMate.
+          of wellness in Ghana with <span className="font-bold text-black">MYDIETNEEDS</span>.
         </p>
       </div>
     </section>
