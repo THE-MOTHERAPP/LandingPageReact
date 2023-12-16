@@ -34,7 +34,7 @@ export default  function Cta(){
             </p>
           </div>
           <div className="max-w-9xl flex flex-col items-center justify-center translate-y-5 ">
-            {emailMessage || <p className=""> Thank you for joining </p>}
+         
             {hide || (
               <form className="p-5">
                 <input
