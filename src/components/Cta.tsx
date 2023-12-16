@@ -6,8 +6,7 @@ const options = ["Weight loss" , "Weight/Muscle Gain" , "Managing Dietary Restri
 export default  function Cta(){
      
   const [hide , setHide] = useState(false)
- const [emailMessage , setEmailMessage]= useState(true)
- const [detailMessage , setDetailMessage]=useState(true)
+ 
     return (
       <>
         <section
@@ -59,7 +58,7 @@ export default  function Cta(){
                   onClick={(e) => {
                     e.preventDefault();
                     setHide(true);
-                    setEmailMessage(true);
+                    
                     console.log("ffer");
                   }}
                 >
@@ -119,7 +118,7 @@ export default  function Cta(){
                     onClick={(e) => {
                       e.preventDefault();
                       setHide(false);
-                      setDetailMessage(false);
+                      
                     }}
                   >
                     Submit
