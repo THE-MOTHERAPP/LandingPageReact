@@ -18,12 +18,11 @@ const Hero = () => {
               before.
             </p>
             <div className="space-x-5 flex">
-              
               <button
                 type="button"
                 className="rounded-md border px-2.5 py-1.5 md:pl-3 md:pr-3 md:py-2 md:px-2 md:text-lg text-sm  bg-[#1170FF] text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
               >
-                Sign up for waitlist
+                <a href="#cta">Join The Waitlist</a>
               </button>
             </div>
           </div>
@@ -40,7 +39,6 @@ const Hero = () => {
               before.
             </p>
             <div className="space-x-2 flex w-full justify-evenly">
-             
               <button
                 type="button"
                 className="rounded-md border px-2.5 py-1.5 text-sm bg-[#1170FF] text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "

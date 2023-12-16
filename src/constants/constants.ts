@@ -27,6 +27,7 @@ export const navLinks: NavLink[] = [
   { id: "#pricing", title: "Pricing", icon: Receipt1 },
   { id: "#contact", title: " Contact us", icon: Messages1 },
   { id: "#about", title: "About us", icon: Messages1 },
+  { id: "#cta", title: "Join Waitlist", icon: Messages1 },
 ];
 
 export const featureGroupOne = [
