@@ -72,7 +72,7 @@ const Features = () => {
               meal planning, we've got you covered!
             </p>
             <p className="max-w-2xl text-[#62677F]">
-              kip the hunt for food items. Our vendor directory makes sourcing
+              Skip the hunt for food items. Our vendor directory makes sourcing
               specific food items a breeze, ensuring you have what you need to
               create delicious and nutritious meals.
             </p>

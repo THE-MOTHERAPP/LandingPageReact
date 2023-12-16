@@ -7,22 +7,19 @@ export default function Pricing() {
   return (
     <section
       id="pricing"
-      className="relative isolate bg-white px-6 py-5 sm:py-10  lg:px-8 mb-10"
+      className=" bg-white px-6 py-5 sm:py-10  lg:px-8 mb-10 border-b-2 border-b-stone-200 "
     >
       <div className="mx-auto max-w-2xl text-center lg:max-w-4xl mb-5">
-        <h2 className="text-sm font-semibold leading-7">
-          Unlock your wellness journey, Choose your plan
-        </h2>
-        <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-3xl">
+        <h2 className="mt-2 mb-3 text-4xl font-bold tracking-tight text-gray-900 font-semibold leading-7">
           Pricing
+        </h2>
+        <p className="text-sm font-semibold leading-7">
+          Unlock your wellness journey, Choose your plan
         </p>
       </div>
-      <div className="container">
+      <div className="container  max-w-9xl">
         {tiers.map((tier) => (
-          <div
-            key={tier.id}
-            className="pricing bg-white p-5 rounded-lg"
-          >
+          <div key={tier.id} className="pricing bg-white p-5 rounded-lg">
             <h3 id={tier.id} className="text-base font-semibold leading-7">
               {tier.name}
             </h3>
@@ -35,7 +32,7 @@ export default function Pricing() {
 
             <ul
               role="list"
-              className="mt-8 space-y-3 text-sm leading-6 text-gray-600 sm:mt-10"
+              className="mt-8 space-y-3 text-base leading-6 text-gray-600 sm:mt-10"
             >
               {tier.features.map((feature) => (
                 <li key={feature} className="flex gap-x-3">

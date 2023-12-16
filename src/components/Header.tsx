@@ -1,24 +1,48 @@
 import { navLinks } from "../constants/constants";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { HambergerMenu } from "iconsax-react";
+import logo from '../assets/mydietneeds_wordmark_black.png'
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [isScrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <MobileSideBar onOpen={setOpen} open={open} />
-      <div className="mx-auto max-w-7xl px-4 lg:px-8 flex items-center justify-between py-5">
-        <h1 className=" tracking-widest font-semibold">
-          <span className="">MYDIETNEEDS</span>{" "}
-          
-        </h1>
+      <div
+        className={`navbar mx-auto pb:4 px-4 lg:px-8 flex items-center justify-between py-5 ${
+          isScrolled ? "fixed" :  ""
+        }`}
+      >
+        <div className="logo-container">
+          <a href="/">
+            <img src={logo} alt="Your Logo" />
+          </a>
+        </div>
         <ul className="list-none hidden sm:flex">
           {navLinks.map((navLink) => (
             <li
               key={navLink.id}
-              className={` hover:text-[#FD905A] text-base   text-gray-600  cursor-pointer  mr-10
+              className={` hover:text-[#FD905A] sm:text-sm text-base font-semibold   text-gray-600  cursor-pointer  mr-10
                 }`}
             >
               <a className="active" href={`${navLink.id}`}>
@@ -29,14 +53,14 @@ const Header = () => {
         </ul>
 
         <button onClick={() => setOpen(true)} className="sm:hidden p-2 ">
-          <HambergerMenu size="20" />
+          <HambergerMenu size="20" className="text-black" />
         </button>
 
         <button
           type="button"
-          className=" hidden sm:block rounded-md text-stone-900 border px-2.5 py-1.5 text-sm  hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
+          className=" hidden sm:block rounded-md text-black font-semibold border px-2.5 py-1.5 text-sm   hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
         >
-          Join waitlist
+          <a href="#cta">Join Waitlist</a>
         </button>
       </div>
     </>
@@ -83,7 +107,7 @@ const MobileSideBar = ({ onOpen, open }: Props) => {
                     <div className="px-4 sm:px-6">
                       <div className="flex items-start justify-between">
                         <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
-                          DIETMATE
+                       
                         </Dialog.Title>
                         <div className="ml-3 flex h-7 items-center">
                           <button

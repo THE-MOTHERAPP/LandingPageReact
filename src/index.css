@@ -22,9 +22,31 @@ html {
 @media screen and (max-width: 930px) {
   #home {
     min-height: 100vh;
-    background: linear-gradient(rgb(215, 207, 207), rgba(139, 69, 19, 0)),
+    background: linear-gradient(#dddbdb, rgba(139, 69, 19, 0)),
       url("./assets/kjnkj.png") right bottom/cover no-repeat;
   }
+}
+
+
+
+.navbar {
+  position: relative;
+  transition: background-color 0.3s;
+  /* Your other styles */
+}
+
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  /* Add additional styles as needed */
 }
 
 @media screen and (min-width: 900px) {
@@ -33,7 +55,26 @@ html {
   }
 }
 
+.logo-container {
+    max-width: 150px; /* Adjust the maximum width as needed */
+    /* Center the logo */
+}
 
+
+
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@media screen and (max-width: 800px) {
+  .logo-container img {
+    width: 70%;
+    height: auto;
+    display: block;
+}
+}
 
 /* @media screen and (max-width: 899px) {
   .veges {
@@ -72,8 +113,12 @@ html {
 .container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center; /* Center the tiers horizontally */
 }
+
+
+
 
 .pricing {
   flex: 1; /* Each tier takes equal horizontal space */
@@ -134,3 +179,162 @@ html {
      background-image:  url(./assets/hero-7153a29f1efdd14cc5b5992925b4775ad13074514c265809afc8547c414efe5a.svg);
   }
 } */
+
+/* Default styles for larger screens */
+/* Default styles for larger screens */
+.my-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Change to three columns */
+  gap: 1rem;
+  text-align: center;
+}
+
+
+.my-header {
+  font-weight: bold;
+}
+
+.my-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: .2rem; /* Reduced the gap */
+  text-align: center;
+  margin: 1rem; /* Reduced the margin */
+}
+
+.my-section {
+  text-align: center;
+  /* Reduced the margin */
+}
+
+.my-subheader {
+  font-weight: 600;
+}
+
+.my-list {
+  margin-top: 0.75rem; /* Reduced the margin-top */
+  padding: 0;
+  list-style: none;
+}
+
+.my-list li a {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #718096;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.my-list li a:hover {
+  color: #cbd5e0;
+}
+
+.my-copyright {
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 1rem; /* Adjusted the margin-top */
+  color: #718096;
+}
+
+
+
+/* Additional styles for the modification */
+
+.my-form {
+   width: 100%; /* Set the width to 50% of its container */
+ 
+  
+}
+.my-form label,
+.my-form input,
+.my-form textarea {
+  display: block;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+
+.my-form label {
+  font-weight: bold;
+}
+
+.my-form input,
+.my-form textarea {
+  padding: 0.25rem; /* Reduced padding */
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+ max-width: 100%; /* Ensure inputs don't exceed the form width */
+ color: black;
+}
+
+
+
+.my-form input{
+  padding: .8rem;
+}
+.my-form button {
+  background-color: #3490dc;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.my-form button:hover {
+  background-color: #2779bd;
+}
+
+@media (max-width: 450px) {
+  .my-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .my-content {
+    grid-template-columns: 1fr;
+    text-align: left;
+    margin: 0.5rem;
+  }
+
+  .my-section {
+    text-align: left;
+    margin: 0.5rem;
+  }
+
+  .my-form {
+   width: 80%; /* Set the width to 50% of its container */
+ 
+  
+}
+}
+
+
+#cta{
+   
+}
+ 
+.ctainput input{
+ box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+
+}
+
+@media (max-width: 400px) {
+  
+  #ctaform{
+ 
+    width: 50%;
+
+  }
+   
+  #cta form{
+      margin-left: 10%;
+  }
+}
