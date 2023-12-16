@@ -43,7 +43,7 @@ const Hero = () => {
                 type="button"
                 className="rounded-md border px-2.5 py-1.5 text-sm bg-[#1170FF] text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
               >
-                Sign up for waitlist
+                <a href="#cta">Join The Waitlist</a>
               </button>
             </div>
           </div>
