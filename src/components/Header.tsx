@@ -1,5 +1,5 @@
 import { navLinks } from "../constants/constants";
-import { Fragment, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { HambergerMenu } from "iconsax-react";
@@ -7,10 +7,32 @@ import logo from '../assets/mydietneeds_wordmark_black.png'
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [isScrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <MobileSideBar onOpen={setOpen} open={open} />
-      <div className="mx-auto max-w-7xl px-4 lg:px-8 flex items-center justify-between py-5">
+      <div
+        className={`navbar mx-auto pb:4 px-4 lg:px-8 flex items-center justify-between py-5 ${
+          isScrolled ? "fixed" :  ""
+        }`}
+      >
         <div className="logo-container">
           <a href="/">
             <img src={logo} alt="Your Logo" />
@@ -31,16 +53,14 @@ const Header = () => {
         </ul>
 
         <button onClick={() => setOpen(true)} className="sm:hidden p-2 ">
-          <HambergerMenu size="20" />
+          <HambergerMenu size="20" className="text-black" />
         </button>
 
         <button
           type="button"
-          className=" hidden sm:block rounded-md text-stone-900 font-semibold border px-2.5 py-1.5 text-sm  hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
+          className=" hidden sm:block rounded-md text-black font-semibold border px-2.5 py-1.5 text-sm   hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 "
         >
-          <a  href="#cta" >
-           Join  Waitlist
-          </a>
+          <a href="#cta">Join Waitlist</a>
         </button>
       </div>
     </>

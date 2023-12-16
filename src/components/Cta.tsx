@@ -6,12 +6,13 @@ const options = ["Weight loss" , "Weight/Muscle Gain" , "Managing Dietary Restri
 export default  function Cta(){
      
   const [hide , setHide] = useState(false)
-
+ const [emailMessage , setEmailMessage]= useState(true)
+ const [detailMessage , setDetailMessage]=useState(true)
     return (
       <>
         <section
           id="cta"
-          className="relative isolate bg-white px-6 py-5 sm:py-10  lg:px-8 mb-20"
+          className=" bg-white px-6 py-5 sm:py-10  lg:px-8 mb-20"
         >
           <div className="mx-auto flex flex-col items-center justify-center  mt-20 text-center lg:max-w-4xl md:mb-3 ">
             <h2 className="mt-2 mb-3 text-2xl font-bold tracking-tight text-gray-900 font-semibold leading-7">
@@ -25,15 +26,16 @@ export default  function Cta(){
               Join our waitlist to embark on a{" "}
               <span className="font-medium text-black"> wellness</span> journey
               like no other. Explore nutritious meals aligned with your
-              <span className="font-medium text-black"> goals</span>, track your 
+              <span className="font-medium text-black"> goals</span>, track your
               <span className="font-medium text-black"> progress</span> and
               savour a{" "}
-              <span className="font-medium text-black">healthier  </span>{" "}
+              <span className="font-medium text-black">healthier </span>{" "}
               lifestyle. This your chance to make a lasting change to your
               health , starting now.
             </p>
           </div>
-          <div className="max-w-9xl flex flex-col items-center justify-center translate-y-2 ">
+          <div className="max-w-9xl flex flex-col items-center justify-center translate-y-5 ">
+            {emailMessage || <p className=""> Thank you for joining </p>}
             {hide || (
               <form className="p-5">
                 <input
@@ -57,6 +59,7 @@ export default  function Cta(){
                   onClick={(e) => {
                     e.preventDefault();
                     setHide(true);
+                    setEmailMessage(true);
                     console.log("ffer");
                   }}
                 >
@@ -66,59 +69,63 @@ export default  function Cta(){
             )}
 
             {hide && (
-              <form className="p-5 max-w-sm m-2 ml-5 ">
-                <label className="mb-3 block text-base">
-                  What are you aiming to achieve with mydietneeds?
-                </label>
-                {/* <select className="block mb-2 w-full p-2 rounded-md" id="cdkd" placeholder="Select all that apply" name="Selectapply">
+              <div>
+               
+                <form className="p-5 max-w-sm m-2 ml-5 ">
+                  <label className="mb-3 block text-base">
+                    What are you aiming to achieve with mydietneeds?
+                  </label>
+                  {/* <select className="block mb-2 w-full p-2 rounded-md" id="cdkd" placeholder="Select all that apply" name="Selectapply">
 
             <option  value="never" >Never</option>
         <option value="occasionally">Occasionally</option>
         <option value="regularly">Regularly</option>
         <option value="always">Always</option>
               </select> */}
-                <div className="bg-[#dddbdb] p-3 mb-3">
-                  {options.map((v, i) => (
-                    <label className="block mb-2 text-base" key={i}>
-                      <input type="checkbox" name="aims" value="yes" /> {v}
-                    </label>
-                  ))}
-                </div>
+                  <div className="bg-[#dddbdb] p-3 mb-3">
+                    {options.map((v, i) => (
+                      <label className="block mb-2 text-base" key={i}>
+                        <input type="checkbox" name="aims" value="yes" /> {v}
+                      </label>
+                    ))}
+                  </div>
 
-                <label className="max-w-sm block text-center mb-2 text-base">
-                  Would you be interested in participating in app testing and
-                  providing feedback on designs?
-                </label>
-                <label className="block mb-2">
-                  <input
-                    type="radio"
-                    name="testing"
-                    className="text-base"
-                    value="yes"
-                  />{" "}
-                  Yes , I am interested in participating.
-                </label>
-                <label className="block mb-2 text-base">
-                  <input
-                    type="radio"
-                    name="testing"
-                    className="text-base"
-                    value="yes"
-                  />{" "}
-                  No , I prefer to wait for the official release
-                </label>
+                  <label className="block  mb-2 text-base">
+                    Would you be interested in participating in app testing and
+                    providing feedback on designs?
+                  </label>
+                  <label className="block mb-2">
+                    <input
+                      type="radio"
+                      name="testing"
+                      className="text-base"
+                      value="yes"
+                    />{" "}
+                    Yes , I am interested in participating.
+                  </label>
+                  <label className="block mb-2 text-base">
+                    <input
+                      type="radio"
+                      name="testing"
+                      className="text-base"
+                      value="yes"
+                    />{" "}
+                    No , I prefer to wait for the official release
+                  </label>
 
-                <button
-                  type="submit"
-                  className=" block bg-[#1170FF] w-full mb-2 p-2 rounded-md"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setHide(false);
-                  }}
-                >
-                  Submit
-                </button>
-              </form>
+                  <button
+                    type="submit"
+                    className=" block bg-[#1170FF] w-full mb-2 p-2 rounded-md"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setHide(false);
+                      setDetailMessage(false);
+                    }}
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
             )}
           </div>
         </section>

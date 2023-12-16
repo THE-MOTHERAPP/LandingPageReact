@@ -4,18 +4,14 @@ const About = () => {
   return (
     <section
       id="about"
-      className="text-[#62677F]  flex flex-col items-center sm:flex-row justify-between mx-auto max-w-7xl px-6 lg:px-8 py-20 "
+      className="text-[#62677F] max-w-9xl  flex flex-col items-center sm:flex-row justify-center mx-auto max-w-7xl px-6 lg:px-8 py-10  border-t-2 border-t-stone-200"
     >
-      <h1 className="text-4xl font-bold tracking-tight text-stone-900 sm:hidden">
+      <h1 className="text-4xl font-bold tracking-tight text-center text-stone-900 sm:hidden">
         ABOUT US
       </h1>
-      <img
-        src={aboutUs}
-        className=" w-96 object-cover rounded-2xl aspect-[3/2] mt-4 "
-        alt="about-us"
-      />
+
       <div className="sm:w-1/2  w-full space-y-4 sm:text-left">
-        <h1 className="text-4xl font-bold tracking-tight text-stone-900 hidden sm:block">
+        <h1 className="mt-2 mb-3 text-4xl text-center  font-bold tracking-tight text-gray-900 font-semibold leading-7 hidden sm:block">
           ABOUT US
         </h1>
         <p className="sm:max-w-2xl ">
@@ -37,7 +33,8 @@ const About = () => {
           Ghana. Join us on this journey, be among the pioneers, and experience
           personalized nutrition and wellness that's authentically Ghanaian.
           Sign up for our waitlist now and become a part of shaping the future
-          of wellness in Ghana with <span className="font-bold text-black">MYDIETNEEDS</span>.
+          of wellness in Ghana with{" "}
+          <span className="font-bold text-black">MYDIETNEEDS</span>.
         </p>
       </div>
     </section>

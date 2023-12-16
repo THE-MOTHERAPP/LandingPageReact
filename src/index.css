@@ -27,6 +27,28 @@ html {
   }
 }
 
+
+
+.navbar {
+  position: relative;
+  transition: background-color 0.3s;
+  /* Your other styles */
+}
+
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  /* Add additional styles as needed */
+}
+
 @media screen and (min-width: 900px) {
   .veges {
     width: 60%
@@ -289,7 +311,7 @@ html {
 
 
 #cta{
-  background: linear-gradient(rgb(241, 246, 243) , white  );
+   
 }
  
 .ctainput input{

@@ -7,7 +7,7 @@ export default function Pricing() {
   return (
     <section
       id="pricing"
-      className="relative isolate bg-white px-6 py-5 sm:py-10  lg:px-8 mb-10"
+      className=" bg-white px-6 py-5 sm:py-10  lg:px-8 mb-10 border-b-2 border-b-stone-200 "
     >
       <div className="mx-auto max-w-2xl text-center lg:max-w-4xl mb-5">
         <h2 className="mt-2 mb-3 text-4xl font-bold tracking-tight text-gray-900 font-semibold leading-7">
