@@ -16,20 +16,20 @@ const About = () => {
         </h1>
         <p className="sm:max-w-2xl ">
           Born from a passion for wellness and a desire to make healthy living
-          simple and enjoyable for Ghanaians, DietMate is here to guide you
+          simple and enjoyable for Ghanaians, mydietneeds is here to guide you
           towards your well-being goals. We understand that health is a personal
           journey, and that's why we're committed to providing personalized
           solutions that resonate with the rhythms of your Ghanaian life.
         </p>
         <p className="sm:max-w-2xl">
-          At DietMate, we want to help you live healthier by providing
+          At mydietneeds, we want to help you live healthier by providing
           personalized meal plans, easy ingredient shopping, progress tracking
           and a supportive community, all influenced by Ghana's rich flavors and
           traditions. Everyone deserves good food that fits their health goals,
           and we're keeping it true to Ghana.
         </p>
         <p className="sm:max-w-2xl">
-          DietMate is more than an app, it's a movement for better health in
+          mydietneeds is more than an app, it's a movement for better health in
           Ghana. Join us on this journey, be among the pioneers, and experience
           personalized nutrition and wellness that's authentically Ghanaian.
           Sign up for our waitlist now and become a part of shaping the future

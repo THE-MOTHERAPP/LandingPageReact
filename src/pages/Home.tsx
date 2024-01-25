@@ -4,17 +4,19 @@ import Pricing from "../components/Pricing";
 import About from "../components/About";
 import Footer from "../components/Footers";
 import Cta from "../components/Cta";
+
 const Home = () => {
   return (
-    <>
+    <div>
       <Hero />
       <Features />
       <Pricing />
-       <Cta/>
+      <Cta />
       <About />
 
       <Footer />
-    </>
+     
+    </div>
   );
 };
 

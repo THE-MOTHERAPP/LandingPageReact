@@ -24,7 +24,7 @@ export default function Pricing() {
               {tier.name}
             </h3>
             <p className="mt-4 flex items-baseline gap-x-2">
-              <span className="text-5xl font-bold tracking-tight text-gray-900">
+              <span className="text-4xl font-bold tracking-tight text-gray-900">
                 {tier.priceMonthly}
               </span>
               <span className="text-base text-gray-500">/month</span>
