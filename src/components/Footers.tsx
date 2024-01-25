@@ -2,28 +2,28 @@ import { footerNavigation } from "../constants/constants";
 import { useState } from "react";
 import { toast } from "react-toastify";
 export default function Foooter() {
-       const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailValid, setEmailValid] = useState(true);
-  const [passwordValid, setPasswordValid] = useState(true)
+  const [passwordValid, setPasswordValid] = useState(true);
 
-     function onEmailChange(event: React.ChangeEvent<HTMLInputElement>) {
-       setEmail(event.target.value);
+  function onEmailChange(event: React.ChangeEvent<HTMLInputElement>) {
+    setEmail(event.target.value);
 
-       if (event.target.value.trim() != "") {
-         setEmailValid(true);
-       }
+    if (event.target.value.trim() != "") {
+      setEmailValid(true);
+    }
 
-       console.log(event.target.value);
-     }
+    console.log(event.target.value);
+  }
 
-     function onPasswordChange(event: React.ChangeEvent<HTMLTextAreaElement>) {
-       setPassword(event.target.value);
+  function onPasswordChange(event: React.ChangeEvent<HTMLTextAreaElement>) {
+    setPassword(event.target.value);
 
-       if (event.target.value.trim() != "") {
-         setPasswordValid(true);
-       }
-     }
+    if (event.target.value.trim() != "") {
+      setPasswordValid(true);
+    }
+  }
   return (
     // <footer classNameName="bg-gray-900 text-white my-grid" aria-labelledby="footer-heading">
     //   <h2 id="footer-heading" className="sr-only">
@@ -180,6 +180,11 @@ export default function Foooter() {
                 placeholder="email"
                 id="email"
                 name="email"
+                className={
+                  emailValid
+                    ? "  focus:outline-none border-2  border-black "
+                    : " focus:outline-none border-2  border-rose-500 "
+                }
                 onChange={onEmailChange}
                 onFocus={(e) => {
                   if (e.target.value == "") {
@@ -194,6 +199,11 @@ export default function Foooter() {
                 id="message"
                 placeholder="message"
                 name="message"
+                className={
+                  passwordValid
+                    ? "  focus:outline-none border-2  border-black "
+                    : " focus:outline-none border-2  border-rose-500 "
+                }
                 rows={4}
                 onChange={onPasswordChange}
                 onFocus={(e) => {
@@ -210,32 +220,26 @@ export default function Foooter() {
                   e.preventDefault();
                   let id;
                   try {
-                   
+                    if (email.trim() == "") {
+                      setEmailValid(false);
+                    }
+                    if (password.trim() == "") {
+                      setPasswordValid(false);
+                    }
 
-
-                     if (email.trim() == "") {
-                       setEmailValid(false);
-                     }
-                     if (password.trim() == "") {
-                       setPasswordValid(false);
-                     }
-
-                     if (email.trim() == "" || password.trim() == "") {
-                       
-
-                       return;
-                     }
-                      id = toast.loading("Please wait ..", {
-                        position: "top-right",
-                        autoClose: 5000,
-                        hideProgressBar: true,
-                        closeOnClick: true,
-                        pauseOnHover: true,
-                        draggable: true,
-                        progress: undefined,
-                        theme: "light",
-                      });
-
+                    if (email.trim() == "" || password.trim() == "") {
+                      return;
+                    }
+                    id = toast.loading("Please wait ..", {
+                      position: "top-right",
+                      autoClose: 5000,
+                      hideProgressBar: true,
+                      closeOnClick: true,
+                      pauseOnHover: true,
+                      draggable: true,
+                      progress: undefined,
+                      theme: "light",
+                    });
 
                     toast.update(id, {
                       render: "Done",
