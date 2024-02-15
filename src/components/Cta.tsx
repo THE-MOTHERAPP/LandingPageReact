@@ -325,7 +325,7 @@ export default function Cta() {
                         Item: item,
                       });
 
-                      const response = await docClient.send(command);
+                        await docClient.send(command);
                       // console.log(response);
 
                       setEmail("");
