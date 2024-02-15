@@ -278,13 +278,13 @@ export default function Cta() {
                       if (test.length == 0 || selectedOptions.length == 0) {
                         console.log("crej");
                         setTestLoading(false);
-                        return;
+                        throw new Error("failed. Please try again")
                       }
                       //@ts-ignore
                       const token = captchaRef.current.getValue();
                       if (!token) {
                         setTestLoading(false);
-                        return;
+                        throw new Error("failed. Please try again")
                       }
                       console.log(token);
 
