@@ -40,7 +40,7 @@ export default function Cta() {
       setEmailValid(true);
     }
 
-    console.log(event.target.value);
+    // console.log(event.target.value);
   }
 
   function onPasswordChange(event:React.ChangeEvent<HTMLInputElement>) {
@@ -56,7 +56,7 @@ export default function Cta() {
       event.preventDefault();
 
       setnameLoading(true);
-      console.log("ffer");
+      // console.log("ffer");
       if (email.trim() == "") {
         setEmailValid(false);
       }
@@ -78,7 +78,7 @@ export default function Cta() {
       setHide(true);
     } catch (error) {
       setnameLoading(false);
-      console.log(error);
+      // console.log(error);
     }
   }
 
@@ -219,8 +219,8 @@ export default function Cta() {
                     className="text-base"
                     value="yes"
                     onChange={(e) => {
-                      console.log(e.target.value);
-                      console.log(e.target.checked);
+                      // console.log(e.target.value);
+                      // console.log(e.target.checked);
                       if (e.target.checked) {
                         setTest(e.target.value);
                       }
@@ -235,9 +235,9 @@ export default function Cta() {
                     className="text-base"
                     value="No"
                     onChange={(e) => {
-                      console.log(e.target.value);
+                      // console.log(e.target.value);
 
-                      console.log(e.target.checked);
+                      // console.log(e.target.checked);
                       if (e.target.checked) {
                         setTest(e.target.value);
                       }
@@ -273,10 +273,10 @@ export default function Cta() {
                       });
 
                       setTestLoading(true);
-                      console.log(test, selectedOptions);
+                      // console.log(test, selectedOptions);
 
                       if (test.length == 0 || selectedOptions.length == 0) {
-                        console.log("crej");
+                        // console.log("crej");
                         setTestLoading(false);
                         throw new Error("failed. Please try again")
                       }
@@ -286,7 +286,7 @@ export default function Cta() {
                         setTestLoading(false);
                         throw new Error("failed. Please try again")
                       }
-                      console.log(token);
+                      // console.log(token);
 
                       const res = await fetch(import.meta.env.VITE_URI, {
                         body: JSON.stringify({
@@ -304,7 +304,7 @@ export default function Cta() {
 
                       const data = await res.json();
 
-                      console.log(data);
+                      // console.log(data);
 
                       if (!data.res.success) {
                         throw new Error("");
@@ -326,7 +326,7 @@ export default function Cta() {
                       });
 
                       const response = await docClient.send(command);
-                      console.log(response);
+                      // console.log(response);
 
                       setEmail("");
                       setPassword("");
@@ -341,7 +341,7 @@ export default function Cta() {
                         autoClose: 5000,
                       });
                     } catch (error) {
-                      console.log(error);
+                      // console.log(error);
                       setTestLoading(false);
                       toast.update(id!, {
                         render: "failed.Please try again",

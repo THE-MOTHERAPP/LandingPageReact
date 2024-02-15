@@ -14,7 +14,7 @@ export default function Foooter() {
       setEmailValid(true);
     }
 
-    console.log(event.target.value);
+    // console.log(event.target.value);
   }
 
   function onPasswordChange(event: React.ChangeEvent<HTMLTextAreaElement>) {
@@ -248,7 +248,7 @@ export default function Foooter() {
                       autoClose: 5000,
                     });
                   } catch (error) {
-                    console.log(error);
+                    // console.log(error);
 
                     toast.update(id!, {
                       render: "failed.Please try again",
