@@ -266,7 +266,7 @@ export default function Foooter() {
         </div>
       </div>
       <div className="my-copyright">
-        &copy; 2023 MYDIETNEEDS. All rights reserved.
+        &copy; 2024 MYDIETNEEDS. All rights reserved.
       </div>
     </footer>
   );

@@ -27,7 +27,7 @@ export const navLinks: NavLink[] = [
   { id: "#pricing", title: "Pricing", icon: Receipt1 },
   { id: "#contact", title: " Contact us", icon: Messages1 },
   { id: "#about", title: "About us", icon: Messages1 },
-  { id: "#cta", title: "Join Waitlist", icon: Messages1 },
+  { id: "#cta", title: "Join Waitlist", },
 ];
 
 export const featureGroupOne = [
@@ -98,9 +98,19 @@ export const footerNavigation = {
     { name: "Premium plan", href: "#" },
   ],
   socialMedia: [
-    { name: "Instagram", href: "#" },
-    { name: "Twitter", href: "#" },
-    { name: "LinkedIn", href: "#" },
+    {
+      name: "Instagram",
+      href: "https://www.instagram.com/mydietneeds_/?igsh=YzAwZjE1ZTI0Zg%3D%3D&utm_source=qr",
+    },
+    { name: "Twitter", href: "https://twitter.com/mydietneeds_" },
+    {
+      name: "Facebook",
+      href: "https://www.facebook.com/profile.php?id=61556678970195",
+    },
+    {
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/company/mydietneeds/about/",
+    },
   ],
   contact: [{ name: "psam64850@gmail.com", href: "#" }],
 };
