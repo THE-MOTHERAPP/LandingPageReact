@@ -306,9 +306,9 @@ export default function Cta() {
                         headers: {
                           "Content-Type": "application/json",
                         },
-                        method: "post",
+                        method: "POST",
                       });
-
+                      
                       if (!res.ok) {
                         throw new Error("");
                       }
@@ -337,15 +337,16 @@ export default function Cta() {
                       });
 
                         await docClient.send(command);
-                       await fetch(import.meta.env.VITE_URI, {
+                      await fetch(import.meta.env.VITE_URI, {
                           body: JSON.stringify({
-                            email:email,
+                            email:password,
                           }),
                           headers: {
                             "Content-Type": "application/json",
                           },
-                          method: "post",
+                          method: "POST",
                         });
+                        
                       // console.log(response);
 
                       setEmail("");
@@ -355,7 +356,7 @@ export default function Cta() {
                       setTestLoading(false);
                       setHide(false);
                       toast.update(id, {
-                        render: "Done",
+                        render: "Thank You.",
                         type: "success",
                         isLoading: false,
                         autoClose: 5000,
