@@ -56,19 +56,30 @@ export default function Cta() {
       event.preventDefault();
 
       setnameLoading(true);
-      // console.log("ffer");
-      if (email.trim() == "") {
-        setEmailValid(false);
-      }
+      // console.log("ffer") ;
+     
+        if (email.trim() == "") {
+          setEmailValid(false);
+        }
       if (password.trim() == "") {
         setPasswordValid(false);
       }
 
-      if (email.trim() == "" || password.trim() == "") {
+      if (
+        (email.trim() == "" ) ||
+        password.trim() == ""
+      ) {
         setnameLoading(false);
 
+     
         return;
       }
+
+       if (!password.includes("@")) {
+         setnameLoading(false);
+         return;
+       }
+
 
       //  setEmail("")
       //  setPassword("")
@@ -326,6 +337,15 @@ export default function Cta() {
                       });
 
                         await docClient.send(command);
+                       await fetch(import.meta.env.VITE_URI, {
+                          body: JSON.stringify({
+                            email:email,
+                          }),
+                          headers: {
+                            "Content-Type": "application/json",
+                          },
+                          method: "post",
+                        });
                       // console.log(response);
 
                       setEmail("");
