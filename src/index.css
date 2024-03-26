@@ -22,8 +22,7 @@ html {
 @media screen and (max-width: 930px) {
   #home {
     min-height: 100vh;
-    background: linear-gradient(#dddbdb, rgba(139, 69, 19, 0)),
-      url("./assets/kjnkj.png") right bottom/cover no-repeat;
+    background: url("./assets/kjnkj.png")  center/cover no-repeat;
   }
 }
 
