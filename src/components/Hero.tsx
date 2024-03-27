@@ -403,7 +403,7 @@ const Hero = () => {
                   type="submit"
                   onClick={onLoginSubmit}
                   disabled={nameLoading}
-                  className=" block py-2  ml-1 px-16  bg-[#1170FF] text-[#FFF] outline-none    mb-2 border-black rounded-md"
+                  className=" block py-2  ml-3 px-10 bg-[#1170FF] text-[#FFF] outline-none    mb-2 border-black rounded-md"
                 >
                   JOIN WAITLIST
                 </button>
